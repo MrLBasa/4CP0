@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utility Software</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom scrollbar for better aesthetics */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f5f9; /* slate-100 */
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #94a3b8; /* slate-400 */
+            border-radius: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #64748b; /* slate-500 */
+        }
+        /* For Firefox */
+        .custom-scrollbar {
+            scrollbar-width: thin;
+            scrollbar-color: #94a3b8 #f1f5f9; /* thumb track */
+        }
+        body {
+            overscroll-behavior-y: none; /* Prevents bounce on scroll at top/bottom of page */
+        }
+        /* Animated Gradient for Header and Footer */
+        .animated-gradient {
+            background: linear-gradient(-45deg, #0f172a, #1e293b, #334155, #0ea5e9);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+        }
+
+        @keyframes gradientShift {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.28.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-hcDCJtzj.js"></script>
+</head>
+<body class="bg-slate-100">
+    <div id="root"></div>
+</body>
+</html>
