@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zé vissz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      body {
+        font-family: 'Comic Neue', cursive;
+        background-color: #fbbf24;
+        background-image: radial-gradient(#f59e0b 20%, transparent 20%),
+                          radial-gradient(#fcd34d 20%, transparent 20%);
+        background-size: 50px 50px;
+        background-position: 0 0, 25px 25px;
+        animation: shift-pattern 4s linear infinite;
+        overflow-x: hidden;
+      }
+
+      @keyframes shift-pattern {
+        0% { background-position: 0 0, 25px 25px; }
+        100% { background-position: 50px 50px, 75px 75px; }
+      }
+
+      @keyframes wobble {
+        0% { transform: rotate(0deg); }
+        25% { transform: rotate(-3deg); }
+        50% { transform: rotate(3deg); }
+        75% { transform: rotate(-1deg); }
+        100% { transform: rotate(0deg); }
+      }
+
+      .animate-wobble-slow {
+        animation: wobble 2s ease-in-out infinite;
+      }
+      
+      .font-comic {
+        font-family: 'Bangers', cursive;
+      }
+    </style>
+  <link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-sv5_l1dD.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
